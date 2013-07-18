@@ -10,7 +10,7 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:paddingTop="5dp"
-        masonry:animated="true"
+        masonry:animated="false"
         masonry:columnWidth="80dp"
         masonry:gutter="5dp" >
     </org.my.masonry.Masonry>
