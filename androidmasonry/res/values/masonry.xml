@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<declare-styleable name="Masonry">
+		<attr name="columnWidth" format="dimension" />
+		<attr name="gutter" format="dimension" />
+		<attr name="animated" format="boolean" />
+		<attr name="duration" format="integer" />
+	</declare-styleable>
+</resources>

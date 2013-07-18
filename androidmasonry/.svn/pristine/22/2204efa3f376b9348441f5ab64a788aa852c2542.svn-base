@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		xmlns:masonry="http://schemas.android.com/apk/res/org.masonry"
+		android:orientation="vertical"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+	<Button 
+		android:id="@+id/toggle"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:text="After: Masonry"
+	/>
+	<LinearLayout
+			android:orientation="horizontal" 
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content">
+		<Button 
+			android:id="@+id/prepend"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:text="prepend"
+			android:layout_weight="1"
+		/>
+		<Button 
+			android:id="@+id/append"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:text="append"
+			android:layout_weight="1"
+		/>
+		<Button 
+			android:id="@+id/clear"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:text="clear"
+			android:layout_weight="1"
+		/>
+	</LinearLayout>
+	<ScrollView
+			android:id="@+id/scroll_view"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent">
+		<org.masonry.Masonry
+				android:id="@+id/masonry"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:paddingTop="5dp"
+			    masonry:columnWidth="80dp"
+			    masonry:gutter="5dp"
+			   	masonry:animated="true">
+		    <include layout="@layout/small_item" />
+			<include layout="@layout/small_item" />
+			<include layout="@layout/long_item" />
+			<include layout="@layout/small_item" />
+			<include layout="@layout/wide_item" />
+			<include layout="@layout/long_item" />
+			<include layout="@layout/small_item" />
+			<include layout="@layout/large_item" />
+			<include layout="@layout/wide_item" />
+			<include layout="@layout/small_item" />
+			<include layout="@layout/large_item" />
+			<include layout="@layout/wide_item" />
+			<include layout="@layout/small_item" />
+			<include layout="@layout/long_item" />
+			<include layout="@layout/wide_item" />
+			<include layout="@layout/small_item" />
+			<include layout="@layout/small_item" />
+			<include layout="@layout/small_item" />
+		</org.masonry.Masonry>
+	</ScrollView> 
+</LinearLayout>
